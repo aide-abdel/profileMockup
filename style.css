@@ -1,0 +1,329 @@
+.page{
+    display: flex;
+}
+.sideBar{
+    /* border: solid black; */
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(141, 88, 28);
+}
+.main{
+    /* border: solid green; */
+    width: 80%;
+    height: 80vh;
+}
+.profilePic{
+    /* border: solid magenta; */
+    height: 30vh;
+    filter: grayscale(100);
+}
+.myPhoto{
+    width: 100%;
+    height: 100%;
+}
+.myName{
+   background-image: url('Images/pexels-rovenimagescom-949587.jpg');
+    padding: .2em;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+}
+.nameHeader{
+    font-size: 20px;
+}
+.menuList{
+    list-style: none;
+    margin-left: -2em;
+    /* margin-top: vh; */
+}
+.menuItem{
+    border-bottom:solid gray;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    display: flex;
+
+}
+
+.menutext{
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+    margin-left: 5em;
+}
+.menutext:hover{
+    color: white;
+    cursor: pointer;
+}
+.menuItem:hover{
+    color: white;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+}
+.fa:hover{
+    color:white;
+    cursor: pointer;
+}
+.main{
+    background-image: url('Images/pexels-rovenimagescom-949587.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.titleMain{
+    color: white;
+    font-size: 3em;
+    margin: auto;
+    margin-bottom: .5em;
+    margin-top: 0px;
+    background-color:rgb(121, 75, 24,.7);
+    padding: .2em;
+
+}
+.mainBox{
+    border: solid rgb(141, 88, 28);
+    border-radius: 20px;
+    width: 50%;
+    height: 60%;
+    margin: 0px auto;
+    background-color: rgba(185, 184, 184,.8);
+}
+.mainPara{
+    color: black;
+    font-size: 1.5em;
+    padding: 2%;
+    margin: 0;
+}
+.workBox{
+    /* border: solid magenta; */
+    /* background-color: white; */
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.eductation{
+    border: solid gray;
+    border-radius: 20px;
+    width:30%;
+    height: 100%;
+    background-color: white;
+}
+.skills{
+    border: solid gray;
+    border-radius: 20px;
+    width:30%;
+    height: 100%;
+    background-color: white;
+    
+}
+.portfolio{
+    border: solid gray;
+    border-radius: 20px;
+    width:30%;
+    height: 100%;
+    background-color: white;
+}
+
+.educationContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+}
+.educationContainer.active{
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.educationHeader{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.educationTitle{
+    font-size: 1.5em;
+
+}
+.closeButton{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.educationBody{
+    padding: 10px 15px;
+}
+.darkBackground.active{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+
+.skillsContainer{
+
+ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+}
+.skillsContainer.active{
+    transform:translate(-50%,-50%) scale(1);
+}
+.skillsBody{
+    display: flex;
+    justify-content: space-between;
+}
+.skillsHeader{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.skillsTitle{
+    font-size: 1.5em;
+
+}
+.closeSkills{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+
+.cssContainer{
+    /* border: solid red; */
+    width: 30%;
+    height: 20%;
+
+}
+.htmlText,.cssText,.jsText{
+    font-size: 3em;
+    margin: 0 auto;
+    width: 50%;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+.htmlText{
+    color: Blue;
+}
+.cssText{
+    color: Red;
+}
+.jsText{
+    color: green;
+}
+.html-skill, .css-skill, .js-skill{
+    padding-top: 20%;
+    padding-left: 10%;
+
+}
+ .css {
+    fill: none;
+    stroke: red;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+     /* animation: animCSS 4s linear forwards;  */
+} 
+
+@keyframes animCSS {
+    100% {
+        /* stroke-dashoffset: 157.5; */
+        stroke-dashoffset: 70;
+    }
+}
+.htmlCotainer{
+    /* border: solid black; */
+    width: 30%;
+    height: 30%;
+    }
+.html{
+    fill: none;
+    stroke: blue;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    /* animation: animHTML 2s linear forwards; */
+
+}
+@keyframes animHTML {
+    100% {
+        /* stroke-dashoffset: 157.5; */
+        stroke-dashoffset: 40;
+    }
+}
+.jsContainer{
+    /* border: solid yellow; */
+    width: 30%;
+    height: 30%;
+    }
+.js{
+    fill: none;
+    stroke: green;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    /* animation: animJS 2s linear forwards; */
+}
+@keyframes animJS {
+    100% {
+        /* stroke-dashoffset: 157.5; */
+        stroke-dashoffset: 120;
+    }
+}
+
+.educationButton, .skillsButton, .portfolioButton{
+    width: 30%;
+    height: 30%;
+    margin-top: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(141, 88, 28,.7);
+    border: none;
+    font-size: 1.2em;
+
+}
+.educationButton:hover, .skillsButton:hover, .portfolioButton:hover{
+    background-color: rgb(121, 75, 24);
+    font-size: 1.3em;
+}
+button:hover{
+    cursor: pointer;
+}
